@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MacroAndCategoryModule_Example' do
+  pod 'MacroAndCategoryModule', :path => '../'
+
+  target 'MacroAndCategoryModule_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

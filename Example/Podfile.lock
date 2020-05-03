@@ -1,0 +1,16 @@
+PODS:
+  - MacroAndCategoryModule (0.1.0)
+
+DEPENDENCIES:
+  - MacroAndCategoryModule (from `../`)
+
+EXTERNAL SOURCES:
+  MacroAndCategoryModule:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MacroAndCategoryModule: 73aee9df14b0ab522b6c2855172af6d87c4ad440
+
+PODFILE CHECKSUM: eeb1c13a3affc4563ce04bc5c5e7f25cdda0e4f0
+
+COCOAPODS: 1.8.4

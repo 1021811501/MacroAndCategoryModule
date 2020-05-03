@@ -1,0 +1,6 @@
+framework module MacroAndCategoryModule {
+  umbrella header "MacroAndCategoryModule-umbrella.h"
+
+  export *
+  module * { export * }
+}
