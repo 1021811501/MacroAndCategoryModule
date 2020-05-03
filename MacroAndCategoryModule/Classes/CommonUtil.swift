@@ -26,7 +26,7 @@ public let APP_DisplayName = Bundle.main.object(forInfoDictionaryKey: "CFBundleD
 public let APP_SystemVersion = UIDevice.current.systemVersion
 
 //MARK: app的bundle identifier
-public public let APP_BundleID = Bundle.main.bundleIdentifier
+public let APP_BundleID = Bundle.main.bundleIdentifier
 //当前语言
 public let AppLanguage = NSLocale.preferredLanguages[0]
 
