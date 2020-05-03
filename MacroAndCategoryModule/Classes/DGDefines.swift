@@ -12,7 +12,7 @@ import UIKit
 
 
 /// DGImage(图片名称)
-var DGImage:(String) -> UIImage? = { (imgName : String) -> UIImage? in
+public var DGImage:(String) -> UIImage? = { (imgName : String) -> UIImage? in
     guard let image = UIImage(named: imgName) else { return nil }
     let image1 = image.withRenderingMode(.alwaysOriginal)
     return image1
@@ -20,7 +20,7 @@ var DGImage:(String) -> UIImage? = { (imgName : String) -> UIImage? in
 
 
 /// DGView(背景色)
-var DGView:(UIColor) -> UIView = { (bgColor : UIColor) -> UIView in
+public var DGView:(UIColor) -> UIView = { (bgColor : UIColor) -> UIView in
     let view = UIView()
     view.backgroundColor = bgColor
     return view
@@ -39,7 +39,7 @@ public var DGLabel:(String?,UIColor?,NSTextAlignment?,UIFont?) -> UILabel = { (t
 
 
 /// DGButton(背景色,标题,标题颜色)
-var DGButton:(_ : UIColor, _ : String, _ : UIColor) -> UIButton = { (bgColor : UIColor, title : String, titleColor : UIColor) -> UIButton in
+public var DGButton:(_ : UIColor, _ : String, _ : UIColor) -> UIButton = { (bgColor : UIColor, title : String, titleColor : UIColor) -> UIButton in
     let button = UIButton(type: .custom)
     button.backgroundColor = bgColor
     button.setTitle(title, for: .normal)
@@ -50,7 +50,7 @@ var DGButton:(_ : UIColor, _ : String, _ : UIColor) -> UIButton = { (bgColor : U
 
 
 /// DGImageView(填充方式,图片名称,超出裁剪,用户交互)
-var DGImageView:(UIView.ContentMode,String?,Bool,Bool) -> UIImageView = { (contentMode : UIView.ContentMode, imageName : String?, maskToBounds : Bool, userInteractionEnabled : Bool) -> UIImageView in
+public var DGImageView:(UIView.ContentMode,String?,Bool,Bool) -> UIImageView = { (contentMode : UIView.ContentMode, imageName : String?, maskToBounds : Bool, userInteractionEnabled : Bool) -> UIImageView in
     let imageView = UIImageView()
     imageView.contentMode = contentMode
     if (imageName != nil) {
@@ -64,7 +64,7 @@ var DGImageView:(UIView.ContentMode,String?,Bool,Bool) -> UIImageView = { (conte
 
 
 /// DGTextField(字体颜色,字体,占位,代理,键盘)
-var DGTextField:(UIColor,UIFont,String,UITextFieldDelegate,UIKeyboardType) -> UITextField = { (textColor: UIColor, font: UIFont, placeholder: String, delegate: UITextFieldDelegate, keyboardType: UIKeyboardType) -> UITextField in
+public var DGTextField:(UIColor,UIFont,String,UITextFieldDelegate,UIKeyboardType) -> UITextField = { (textColor: UIColor, font: UIFont, placeholder: String, delegate: UITextFieldDelegate, keyboardType: UIKeyboardType) -> UITextField in
     let textfield = UITextField()
     textfield.textColor = textColor;
     textfield.font = font
@@ -77,7 +77,7 @@ var DGTextField:(UIColor,UIFont,String,UITextFieldDelegate,UIKeyboardType) -> UI
 
 
 /// DGTableView()
-var DGTableView:(UITableView.Style,UIColor,AnyObject,NSArray,NSArray,NSArray) -> UITableView = { (style: UITableView.Style, bgColor: UIColor, delegate: AnyObject, registerCells: NSArray, registerHeaderViews: NSArray, registerFooterViews: NSArray) -> UITableView in
+public var DGTableView:(UITableView.Style,UIColor,AnyObject,NSArray,NSArray,NSArray) -> UITableView = { (style: UITableView.Style, bgColor: UIColor, delegate: AnyObject, registerCells: NSArray, registerHeaderViews: NSArray, registerFooterViews: NSArray) -> UITableView in
     let tableView = UITableView(frame: CGRect.zero, style: style)
     tableView.backgroundColor = bgColor
     tableView.delegate = delegate as? UITableViewDelegate

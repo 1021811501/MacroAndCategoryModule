@@ -7,11 +7,12 @@
 //
 
 import UIKit
-
+import MacroAndCategoryModule
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        compareVersion(newVersion:1.0)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
